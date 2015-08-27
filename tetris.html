@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<html>
+<head>
+    <title>俄罗斯方块</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/tetris.css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <!--响应式布局：
+        PC中显示为一行二列     lg md
+        平板中显示为一行二列   sm
+        手机中显示为二行一列   xs -->
+        <div class="left col-xs-12 col-sm-6">
+            <table id="playground"></table>
+        </div>
+        <div class="right col-xs-12 col-sm-6">
+            <div class="next">
+                <h3>下一个：</h3>
+                <table id="playground0"></table>
+            </div>
+            <h3>
+                当前得分：<span id="curScore">0</span><br>
+                历史最高分：<span id="highestScore">0</span>
+            </h3>
+            <h3>游戏说明：</h3>
+            <h4>(电脑版)</h4>
+            <p>1. 使用空格键开始/暂停游戏</p>
+            <p>2. 使用向上键变换方块的方向</p>
+            <p>3. 使用左、右、下键控制方块行进方向</p>
+        <!--</div>
+		<div>-->
+            <h4>(电脑/手机/平板)</h4>
+            <input type="button" value="变形" onclick="t.rotate();">
+            <input type="button" value="向下" onclick="t.moveDown();">
+            <input type="button" value="向左" onclick="t.moveLeft();">
+            <input type="button" value="向右" onclick="t.moveRight();">
+            <input type="button" value="开始/暂停" onclick="t.resumeOrPause();">
+		</div>
+    </div>
+</div>
+<script src="js/tetris.js"></script>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script>
+    /*Bootlint： 检测Bootstrap使用是否正确*/
+    (function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "js/bootlint.js";
+        document.body.appendChild(s)
+    })();
+</script>-->
+</body>
+</html>
+
+

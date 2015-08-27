@@ -1,0 +1,61 @@
+﻿.container {
+    width: 750px;
+    margin: 50px auto;
+}
+
+.left {
+    background: #fff;
+    float: left;
+}
+
+#playground {
+    border-collapse: collapse;
+}
+
+#playground td{
+    width: 30px;
+    height: 30px;
+}
+
+.right {
+    width: 400px;
+    float: right;
+}
+.next{
+    border: 1px solid #fff;
+    width: 200px;
+}
+#playground0{
+    margin: auto;
+}
+.right h3{
+    padding: 4px  0;
+    font-family: "微软雅黑";
+}
+
+.right p{
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+
+#curScore{
+    font-size: 1.6em;
+    color: #0a0;
+}
+
+#highestScore{
+    font-size: 1.6em;
+    color: #f00;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+}
+
+.cell0 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+}
